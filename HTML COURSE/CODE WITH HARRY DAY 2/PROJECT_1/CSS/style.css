@@ -1,0 +1,178 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #ff5e5e;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 120px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #e94444;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 140px 20px 60px;
+  background: url('/HTML COURSE/CODE WITH HARRY DAY 2/PROJECT_1/IMAGES/bg.png') no-repeat center center/cover;
+  color: #fff;
+}
+
+.hero img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  margin-top: 20px;
+}
+
+.search-box input {
+  width: 50%;
+  padding: 12px;
+  border-radius: 6px 0 0 6px;
+  border: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #ff5e5e;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #e94444;
+}
+
+/* Features Section */
+.features-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.features-section h2 {
+  font-size: 32px;
+  color: #ff5e5e;
+  margin-bottom: 10px;
+}
+
+.features-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.main-features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature {
+  background-color: white;
+  padding: 25px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  font-size: 22px;
+  color: #ff5e5e;
+  margin-bottom: 15px;
+}
+
+.feature p {
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-box input {
+    width: 70%;
+  }
+
+  .main-features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    width: 90%;
+  }
+}

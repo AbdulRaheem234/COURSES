@@ -1,0 +1,5 @@
+f = open('C:\\Users\\Admin\\OneDrive\\Desktop\\COURSES\\PYTHON\\DAY-2\\CHAPTER-9\\another.txt', 'a')
+# f.write("Please write this to the file:")
+# f.write("Mental processes that involve ideas, opinions, and beliefs about oneself and the world:")
+f.write("I am appending")
+f.close()
